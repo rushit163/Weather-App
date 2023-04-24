@@ -2,8 +2,6 @@ import React from 'react'
 
 const Weather = ({data}) => {
   return (
-    
-
 	<div className="w-full max-w-screen-sm bg-white p-10 rounded-xl ring-8 ring-white ring-opacity-40">
 		<div className="flex justify-between">
 			<div className="flex flex-col">
@@ -11,7 +9,8 @@ const Weather = ({data}) => {
 				<span className="font-semibold mt-1 text-gray-500">{data.city}</span>
                 <span className="font-semibold mt-1 text-gray-500">{data.weather[0].description}</span>
 			</div>
-			<img className="h-24 w-24 fill-current text-yellow-400" src={`icons/${data.weather[0].icon}.png`} height="24" viewBox="0 0 24 24" width="24" alt='weather Image'/>
+			<img className="h-24 w-24 fill-current text-yellow-400" src={`icons/${data.weather[0].icon}.png`} 
+            height="24" viewBox="0 0 24 24" width="24" alt='weather Image'/>
 		</div>
      
 		<div className="lg:flex md:flex justify-between mt-12">
@@ -36,9 +35,7 @@ const Weather = ({data}) => {
 	
 			</div>
 		</div>
-
 	</div>
-    
   )
 }
 

@@ -15,7 +15,8 @@ const Forecast = ({data}) => {
             </p>
         </div>
         <img className="h-8 w-8 fill-current w-1/4" src={`icons/${item.weather[0].icon}.png`} height="24" viewBox="0 0 24 24" width="24"/>
-        <span className="font-semibold text-lg w-1/4 text-right">{Math.round(item.main.temp_max)}°C /{Math.round(item.main.temp_min)}°C</span>
+        <span className="font-semibold text-lg w-1/4 text-right">{Math.round(item.main.temp_max)}°C /{Math.round(item.main.temp_min)}°C
+        </span>
     </div>
     
 ))}
